@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="roomBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F1EFEA" />
+      <stop offset="60%" stop-color="#FAF9F6" />
+      <stop offset="100%" stop-color="#E2DDD5" />
+    </linearGradient>
+    <linearGradient id="woodDesk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3D2A1D" />
+      <stop offset="50%" stop-color="#4E3625" />
+      <stop offset="100%" stop-color="#2E1F15" />
+    </linearGradient>
+  </defs>
+
+  <!-- Wall Background -->
+  <rect width="800" height="500" fill="url(#roomBg)" />
+  <rect y="360" width="800" height="140" fill="#D8D2C6" />
+  <line x1="0" y1="360" x2="800" y2="360" stroke="#B8AFA0" stroke-width="2" />
+
+  <!-- Natural Light Architectural Window -->
+  <g transform="translate(480, 50)">
+    <rect width="260" height="240" fill="#E8EEF5" rx="8" stroke="#CBD5E1" stroke-width="3" />
+    <!-- Window Panes -->
+    <line x1="130" y1="0" x2="130" y2="240" stroke="#CBD5E1" stroke-width="3" />
+    <line x1="0" y1="120" x2="260" y2="120" stroke="#CBD5E1" stroke-width="3" />
+    <!-- Translucent Sheer Curtains -->
+    <path d="M0 0 Q40 120 15 240 L0 240 Z" fill="#FFFFFF" opacity="0.65" />
+    <path d="M260 0 Q220 120 245 240 L260 240 Z" fill="#FFFFFF" opacity="0.65" />
+    <!-- Sunlight shaft -->
+    <polygon points="10,240 260,240 320,440 -40,440" fill="#FFFBEB" opacity="0.15" />
+  </g>
+
+  <!-- Tasteful Anatomical & Botanical Medical Wall Art -->
+  <g transform="translate(140, 70)">
+    <rect width="130" height="170" rx="4" fill="#FFFFFF" stroke="#0F1D38" stroke-width="3" />
+    <rect x="8" y="8" width="114" height="154" fill="#FAF9F6" />
+    <!-- Botanical embryo / maternal sprout art -->
+    <circle cx="65" cy="85" r="38" stroke="#C5A880" stroke-width="1.2" stroke-dasharray="3 3" />
+    <path d="M65 55 C78 55 85 70 85 85 C85 105 65 115 65 115 C65 115 45 105 45 85 C45 70 52 55 65 55 Z" stroke="#9B3C53" stroke-width="1.8" fill="none" />
+    <circle cx="65" cy="82" r="5" fill="#C5A880" />
+  </g>
+
+  <!-- Doctor's Desk & Consultation Equipment -->
+  <g transform="translate(180, 270)">
+    <!-- Desk surface -->
+    <polygon points="40,60 480,60 450,110 10,110" fill="url(#woodDesk)" />
+    <!-- Desk legs / panel -->
+    <rect x="40" y="110" width="40" height="110" fill="#2E1F15" />
+    <rect x="410" y="110" width="40" height="110" fill="#2E1F15" />
+    
+    <!-- Medical Tablet / Consultation Files -->
+    <rect x="230" y="66" width="70" height="42" rx="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1" />
+    <rect x="236" y="72" width="58" height="5" rx="2" fill="#0F1D38" opacity="0.6" />
+    <rect x="236" y="81" width="40" height="4" rx="2" fill="#9B3C53" opacity="0.5" />
+    
+    <!-- Clean Ceramic Pen Stand & Plant -->
+    <rect x="330" y="60" width="22" height="30" rx="3" fill="#FAF9F6" stroke="#CBD5E1" stroke-width="1" />
+    <circle cx="341" cy="52" r="14" fill="#15803D" opacity="0.8" />
+
+    <!-- Stethoscope resting neatly on consultation desk -->
+    <path d="M120 78 Q150 95 180 82 Q195 72 205 85" stroke="#0F1D38" stroke-width="3" fill="none" stroke-linecap="round" />
+    <circle cx="205" cy="85" r="7" fill="#C5A880" />
+  </g>
+
+  <!-- Doctor's Ergonomic Executive Chair -->
+  <g transform="translate(100, 220)">
+    <rect x="20" y="20" width="70" height="90" rx="8" fill="#1B2B4F" />
+    <rect x="15" y="105" width="80" height="16" rx="6" fill="#0F1D38" />
+    <rect x="48" y="121" width="14" height="65" fill="#475569" />
+  </g>
+
+  <!-- Patient Consultation Chairs -->
+  <g transform="translate(490, 260)">
+    <rect x="10" y="20" width="60" height="80" rx="8" fill="#E2DDD5" stroke="#CBD5E1" stroke-width="1.5" />
+    <rect x="8" y="95" width="64" height="14" rx="5" fill="#D3C9BE" />
+    <line x1="16" y1="109" x2="14" y2="155" stroke="#94A3B8" stroke-width="3" />
+    <line x1="64" y1="109" x2="66" y2="155" stroke="#94A3B8" stroke-width="3" />
+  </g>
+
+  <!-- Subtle Label Overlay -->
+  <rect x="24" y="440" width="280" height="36" rx="6" fill="#0F1D38" fill-opacity="0.9" />
+  <text x="38" y="462" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#FAF9F6">
+    Private Consultation Suite · Patna Practice
+  </text>
+</svg>

@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  
+  --color-navy-950: #080D1A;
+  --color-navy-900: #0F1D38;
+  --color-navy-800: #17284A;
+  --color-navy-700: #233A66;
+  
+  --color-rose-700: #7E263E;
+  --color-rose-600: #9B3C53;
+  --color-rose-500: #B74F67;
+  --color-rose-50: #FBF4F6;
+  
+  --color-gold-600: #B5935F;
+  --color-gold-500: #C5A880;
+  --color-gold-100: #F5EFE6;
+  
+  --color-linen: #FAF9F6;
+  --color-linen-alt: #F4F1EA;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #1E293B;
+    background-color: #FAF9F6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Subtle heartbeat pulse animation */
+@keyframes ecgPulse {
+  0% { stroke-dashoffset: 600; opacity: 0.3; }
+  50% { opacity: 0.9; }
+  100% { stroke-dashoffset: 0; opacity: 0.3; }
+}
+
+.animate-ecg {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: ecgPulse 4s ease-in-out infinite;
+}
+
+/* Subtle float animation */
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.5deg); }
+}
+
+.animate-float {
+  animation: gentleFloat 7s ease-in-out infinite;
+}
+
+/* Orbit animation */
+@keyframes subtleOrbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-orbit {
+  animation: subtleOrbit 45s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

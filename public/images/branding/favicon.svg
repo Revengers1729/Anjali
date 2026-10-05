@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0F1D38" />
+  <circle cx="32" cy="32" r="26" stroke="#C5A880" stroke-width="1.2" stroke-opacity="0.5" />
+  
+  <!-- Single-serpent Rod of Asclepius & maternal motif -->
+  <line x1="32" y1="14" x2="32" y2="50" stroke="#FAF9F6" stroke-width="2.2" stroke-linecap="round" />
+  <circle cx="32" cy="12.5" r="2.5" fill="#C5A880" />
+  
+  <path d="M26 44 C28 48 35 48 37 43 C39 38 36 34 30 31 C24 28 27 21 31 18 C35 17 37 18 36 15" 
+        stroke="#FAF9F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <circle cx="36" cy="15" r="1.2" fill="#FAF9F6" />
+  <path d="M32 23 C35 21 39 23 39 26 C36 27 34 25 32 23 Z" fill="#9B3C53" />
+</svg>

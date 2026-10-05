@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <defs>
+    <linearGradient id="gynGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1D38" />
+      <stop offset="100%" stop-color="#233A66" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#gynGrad)" />
+
+  <!-- Subtle Medical Waveforms & Concentric Anatomy Circles -->
+  <g opacity="0.35">
+    <circle cx="300" cy="225" r="180" stroke="#C5A880" stroke-width="1" stroke-dasharray="4 6" />
+    <circle cx="300" cy="225" r="140" stroke="#FAF9F6" stroke-width="0.75" />
+    <circle cx="300" cy="225" r="90" stroke="#9B3C53" stroke-width="1.2" />
+  </g>
+
+  <!-- Abstract Aesthetic Gynecology Medical Art: Lotus & Reassuring Hands Motif -->
+  <g transform="translate(180, 100)">
+    <!-- Protective Gentle Care Arc -->
+    <path d="M40 180 C20 120 40 40 120 40 C200 40 220 120 200 180" 
+          stroke="#C5A880" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8" />
+    
+    <!-- Central lotus/bloom symbolizing feminine wellness -->
+    <path d="M120 60 C140 100 140 140 120 170 C100 140 100 100 120 60 Z" fill="#9B3C53" opacity="0.85" />
+    <path d="M120 90 C150 110 160 140 145 165 C130 150 125 130 120 90 Z" fill="#C5A880" opacity="0.7" />
+    <path d="M120 90 C90 110 80 140 95 165 C110 150 115 130 120 90 Z" fill="#C5A880" opacity="0.7" />
+    
+    <!-- Asclepius Single Serpent Winding Gracefully -->
+    <path d="M108 175 C115 185 125 185 130 175 C135 165 125 155 115 145 C105 135 110 120 120 115" 
+          stroke="#FAF9F6" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <circle cx="120" cy="55" r="4.5" fill="#FAF9F6" />
+  </g>
+
+  <!-- Clinical Verification Ribbon -->
+  <rect x="36" y="375" width="220" height="42" rx="8" fill="#080D1A" fill-opacity="0.8" stroke="#C5A880" stroke-width="1" stroke-opacity="0.5" />
+  <text x="50" y="396" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#FAF9F6">
+    Comprehensive Gynecology
+  </text>
+  <text x="50" y="409" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="400" fill="#94A3B8">
+    Evidence-informed clinical consultations
+  </text>
+</svg>

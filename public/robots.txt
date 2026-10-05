@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /images/
+
+Sitemap: https://dranjalikumari.in/sitemap.xml
+Sitemap: https://dranjalikumari.in/image-sitemap.xml

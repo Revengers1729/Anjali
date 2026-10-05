@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Soft circular backing aura -->
+  <circle cx="60" cy="60" r="54" stroke="#C5A880" stroke-width="1.5" stroke-opacity="0.35" stroke-dasharray="4 3" />
+  <circle cx="60" cy="60" r="48" fill="#0F1D38" />
+  
+  <!-- Subtle feminine maternal curve embracing the staff -->
+  <path d="M42 46 C42 34 52 26 60 26 C68 26 78 34 78 46 C78 62 60 76 60 88" 
+        stroke="#C5A880" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.45" />
+
+  <!-- The Rod of Asclepius: Single-serpent medical staff with botanical bloom node -->
+  <!-- Central authentic medical staff -->
+  <line x1="60" y1="28" x2="60" y2="92" stroke="#FAF9F6" stroke-width="2.5" stroke-linecap="round" />
+  
+  <!-- Crown finial node -->
+  <circle cx="60" cy="26" r="3.5" fill="#C5A880" />
+  
+  <!-- Asclepius single serpent winding gracefully around staff -->
+  <path d="M52 82 C56 86 64 86 67 80 C70 74 65 67 56 62 C46 56 50 45 58 41 C64 38 68 39 67 33" 
+        stroke="#F4F1EA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  <!-- Asclepius serpent head detail -->
+  <circle cx="67" cy="33" r="1.5" fill="#FAF9F6" />
+
+  <!-- Maternal seed / care leaf flourish -->
+  <path d="M60 48 C66 45 72 48 72 54 C67 55 62 52 60 48 Z" fill="#9B3C53" opacity="0.9" />
+  <path d="M60 66 C54 63 48 66 48 72 C53 73 58 70 60 66 Z" fill="#C5A880" opacity="0.85" />
+</svg>

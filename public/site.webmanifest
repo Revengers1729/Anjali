@@ -1,0 +1,17 @@
+{
+  "name": "Dr. Anjali Kumari - Gynecologist & Obstetrician Patna",
+  "short_name": "Dr. Anjali Kumari",
+  "description": "Private Practice of Dr. Anjali Kumari, Gynecologist & Obstetrician in Patna, Bihar.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F6",
+  "theme_color": "#0F1D38",
+  "icons": [
+    {
+      "src": "/images/branding/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <defs>
+    <linearGradient id="pregGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17284A" />
+      <stop offset="50%" stop-color="#0F1D38" />
+      <stop offset="100%" stop-color="#2D1525" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#pregGrad)" />
+
+  <!-- Soft Ambient Rings & Trimester Orbit Lines -->
+  <g opacity="0.3">
+    <ellipse cx="300" cy="225" rx="200" ry="150" stroke="#C5A880" stroke-width="1.2" stroke-dasharray="5 5" />
+    <circle cx="300" cy="225" r="130" stroke="#9B3C53" stroke-width="1" />
+  </g>
+
+  <!-- Abstract Aesthetic Obstetrics / Maternal Silhouette & Developing Life Contour -->
+  <g transform="translate(190, 80)">
+    <!-- Mother's head and neck contour -->
+    <path d="M110 50 C125 50 135 60 135 75 C135 90 120 100 110 100 C95 100 85 90 85 75 C85 60 95 50 110 50 Z" fill="#E2DDD5" opacity="0.85" />
+    <path d="M105 100 L105 125 C80 145 60 185 60 230 L80 230 C80 195 95 160 115 145 L115 230" stroke="#FAF9F6" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    
+    <!-- Gentle Maternal Belly Arc -->
+    <path d="M115 150 C165 160 185 205 175 250 C165 285 130 300 105 300" 
+          stroke="#C5A880" stroke-width="3" stroke-linecap="round" fill="none" />
+
+    <!-- Supporting Care Hands embracing new life -->
+    <path d="M90 260 C120 280 150 270 170 240" stroke="#9B3C53" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    
+    <!-- Radiant core of life node -->
+    <circle cx="135" cy="220" r="16" fill="#C5A880" opacity="0.3" />
+    <circle cx="135" cy="220" r="8" fill="#F4F1EA" />
+  </g>
+
+  <!-- Clinical Verification Ribbon -->
+  <rect x="36" y="375" width="240" height="42" rx="8" fill="#080D1A" fill-opacity="0.8" stroke="#C5A880" stroke-width="1" stroke-opacity="0.5" />
+  <text x="50" y="396" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#FAF9F6">
+    Obstetrics &amp; Pregnancy Care
+  </text>
+  <text x="50" y="409" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="400" fill="#94A3B8">
+    Antenatal care &amp; maternal wellness
+  </text>
+</svg>

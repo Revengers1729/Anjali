@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1D38" />
+      <stop offset="50%" stop-color="#14264A" />
+      <stop offset="100%" stop-color="#080D1A" />
+    </linearGradient>
+    <linearGradient id="coatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0A97E" />
+      <stop offset="100%" stop-color="#CD9366" />
+    </linearGradient>
+    <linearGradient id="haloGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A880" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#9B3C53" stop-opacity="0.05" />
+    </linearGradient>
+    <radialGradient id="softLight" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#C5A880" stop-opacity="0.2" />
+      <stop offset="60%" stop-color="#0F1D38" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Deep Architectural Medical Canvas -->
+  <rect width="600" height="800" fill="url(#bgGrad)" />
+  <circle cx="300" cy="320" r="280" fill="url(#softLight)" />
+
+  <!-- Subtle Medical Orbital Geometry in Background -->
+  <g opacity="0.3">
+    <circle cx="300" cy="330" r="230" stroke="#C5A880" stroke-width="1" stroke-dasharray="6 6" />
+    <circle cx="300" cy="330" r="260" stroke="#9B3C53" stroke-width="0.8" />
+    <circle cx="300" cy="330" r="190" stroke="#FAF9F6" stroke-width="0.6" stroke-dasharray="2 8" />
+    <!-- Fine latitude coordinate lines -->
+    <path d="M100 330 Q300 240 500 330" stroke="#C5A880" stroke-width="0.7" fill="none" opacity="0.4" />
+    <path d="M100 330 Q300 420 500 330" stroke="#C5A880" stroke-width="0.7" fill="none" opacity="0.4" />
+  </g>
+
+  <!-- Soft Clinic Window Light Ambient Beam -->
+  <path d="M420 0 L600 0 L600 480 L350 480 Z" fill="#FFFFFF" opacity="0.03" />
+
+  <!-- Doctor Silhouette & Detailed Portrait Articulation -->
+  <g id="physician">
+    <!-- Back Hair & Bun -->
+    <path d="M220 280 C210 180 260 120 300 120 C340 120 390 180 380 280 C360 250 340 230 300 230 C260 230 240 250 220 280 Z" fill="#1A181B" />
+    <ellipse cx="300" cy="150" rx="65" ry="55" fill="#141215" />
+    
+    <!-- Neck -->
+    <path d="M272 260 L272 320 C272 335 285 345 300 345 C315 345 328 335 328 320 L328 260 Z" fill="url(#skinGrad)" />
+    <!-- Neck shadow under chin -->
+    <path d="M272 260 C285 275 315 275 328 260 C320 270 280 270 272 260 Z" fill="#9C6B46" opacity="0.4" />
+
+    <!-- Head and Facial Contour (Dignified Indian Physician) -->
+    <path d="M246 220 C242 165 265 140 300 140 C335 140 358 165 354 220 C352 260 332 282 300 282 C268 282 248 260 246 220 Z" fill="url(#skinGrad)" />
+
+    <!-- Elegant Front Hair Styling -->
+    <path d="M245 200 C255 160 280 145 300 145 C320 145 345 160 355 200 C342 170 320 162 300 163 C280 162 258 170 245 200 Z" fill="#201D22" />
+    <!-- Fine side locks -->
+    <path d="M245 200 C242 220 246 250 250 260 C246 245 244 220 245 200 Z" fill="#1A181B" />
+    <path d="M355 200 C358 220 354 250 350 260 C354 245 356 220 355 200 Z" fill="#1A181B" />
+
+    <!-- Refined Facial Features -->
+    <!-- Eyebrows -->
+    <path d="M266 198 Q278 193 289 197" stroke="#2D2118" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <path d="M311 197 Q322 193 334 198" stroke="#2D2118" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes (Warm, attentive, intelligent) -->
+    <g id="eyes">
+      <path d="M268 209 Q278 203 288 209 Q278 214 268 209 Z" fill="#FAF9F6" />
+      <circle cx="278" cy="208.5" r="3.8" fill="#362215" />
+      <circle cx="277" cy="207.5" r="1.2" fill="#FFFFFF" />
+
+      <path d="M312 209 Q322 203 332 209 Q322 214 312 209 Z" fill="#FAF9F6" />
+      <circle cx="322" cy="208.5" r="3.8" fill="#362215" />
+      <circle cx="321" cy="207.5" r="1.2" fill="#FFFFFF" />
+    </g>
+
+    <!-- Subtle Bindi / Professional poise -->
+    <circle cx="300" cy="190" r="1.8" fill="#7E263E" opacity="0.85" />
+
+    <!-- Nose -->
+    <path d="M298 203 L297 228 Q294 233 300 234 Q306 233 303 228" stroke="#B87B52" stroke-width="1.6" fill="none" stroke-linecap="round" />
+
+    <!-- Gentle, reassuring smile -->
+    <path d="M286 250 Q300 259 314 250" stroke="#9B3C53" stroke-width="2" stroke-linecap="round" fill="none" />
+    <path d="M288 250 Q300 252 312 250" stroke="#CD7585" stroke-width="1" fill="none" opacity="0.6" />
+
+    <!-- Inner Medical Attire (Midnight Navy / Silk) -->
+    <path d="M260 320 L340 320 L350 420 L250 420 Z" fill="#142343" />
+    <path d="M288 320 L300 350 L312 320 Z" fill="#FAF9F6" />
+
+    <!-- Pristine White Clinical Lab Coat -->
+    <path d="M200 410 C200 370 230 330 265 320 L285 410 L220 540 L160 520 Z" fill="url(#coatGrad)" />
+    <path d="M400 410 C400 370 370 330 335 320 L315 410 L380 540 L440 520 Z" fill="url(#coatGrad)" />
+
+    <!-- Main Coat Body -->
+    <path d="M160 500 L210 370 C240 340 270 335 300 335 C330 335 360 340 390 370 L440 500 L470 780 C470 800 130 800 130 780 Z" fill="url(#coatGrad)" />
+    
+    <!-- Coat Lapels (Sharp, tailored tailoring) -->
+    <path d="M255 330 L295 440 L260 455 L230 360 Z" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="0.8" />
+    <path d="M345 330 L305 440 L340 455 L370 360 Z" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.8" />
+    
+    <!-- Coat Placket & Buttons -->
+    <line x1="300" y1="440" x2="300" y2="790" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="300" cy="485" r="4.5" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1" />
+    <circle cx="300" cy="545" r="4.5" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1" />
+    <circle cx="300" cy="605" r="4.5" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1" />
+
+    <!-- Chest Pocket with Subtle ID Badge -->
+    <rect x="220" y="470" width="48" height="55" rx="3" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+    <rect x="226" y="480" width="36" height="4" rx="2" fill="#0F1D38" opacity="0.6" />
+    <rect x="226" y="488" width="24" height="3" rx="1.5" fill="#9B3C53" opacity="0.7" />
+
+    <!-- Professional Stethoscope Draped Gracefully -->
+    <g id="stethoscope">
+      <!-- Dark matte navy/slate tubing -->
+      <path d="M260 340 C240 360 235 440 255 520 C265 560 275 570 282 560 L285 530" 
+            stroke="#26344F" stroke-width="7" stroke-linecap="round" fill="none" />
+      <path d="M340 340 C360 360 365 440 345 520 C335 560 325 570 318 560" 
+            stroke="#26344F" stroke-width="7" stroke-linecap="round" fill="none" />
+      
+      <!-- Stethoscope chest piece (Champagne gold & medical steel) -->
+      <circle cx="285" cy="535" r="14" fill="#C5A880" stroke="#FAF9F6" stroke-width="1.8" />
+      <circle cx="285" cy="535" r="9" fill="#0F1D38" />
+      <circle cx="285" cy="535" r="3" fill="#C5A880" />
+      
+      <!-- Upper metal binaural earpieces crossing neckline -->
+      <path d="M260 340 Q255 315 270 310" stroke="#C5A880" stroke-width="4" stroke-linecap="round" fill="none" />
+      <path d="M340 340 Q345 315 330 310" stroke="#C5A880" stroke-width="4" stroke-linecap="round" fill="none" />
+    </g>
+  </g>
+
+  <!-- Elegant Bottom Gradient Scrim to integrate into dark/light container -->
+  <rect y="680" width="600" height="120" fill="url(#bgGrad)" opacity="0.8" />
+  
+  <!-- Subtle Trust Badge in Lower Corner -->
+  <g transform="translate(40, 715)">
+    <rect width="210" height="52" rx="10" fill="#0F1D38" fill-opacity="0.85" stroke="#C5A880" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="28" cy="26" r="14" fill="#17284A" />
+    <path d="M23 26 L27 30 L34 22" stroke="#C5A880" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="50" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#FAF9F6">
+      Dr. Anjali Kumari
+    </text>
+    <text x="50" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="400" fill="#CBD5E1">
+      Gynecology &amp; Obstetrics · Patna
+    </text>
+  </g>
+</svg>
