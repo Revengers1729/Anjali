@@ -8,6 +8,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { AppointmentModal } from "./components/AppointmentModal";
 import { HomePage } from "./pages/HomePage";
+import { OwnerSetupGuide } from "./components/OwnerSetupGuide";
 import { AboutPage } from "./pages/AboutPage";
 import { SpecialtiesPage } from "./pages/SpecialtiesPage";
 import { PatientInfoPage } from "./pages/PatientInfoPage";
