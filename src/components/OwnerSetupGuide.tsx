@@ -33,7 +33,7 @@ export const OwnerSetupGuide: React.FC<OwnerSetupGuideProps> = ({ isOpen, onClos
       icon: Globe,
       description: "",
       checklist: [
-        "".
+        "",
         ""
       ]
     },
