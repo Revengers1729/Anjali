@@ -15,70 +15,55 @@ export const OwnerSetupGuide: React.FC<OwnerSetupGuideProps> = ({ isOpen, onClos
   const steps = [
     {
       step: 1,
-      title: "Update Practice Information",
+      title: "",
       icon: Phone,
-      description: "Replace placeholder phone numbers, exact clinic address, and medical registration number in the data file.",
+      description: "",
       checklist: [
         "Open `src/data/doctorData.ts`",
-        "Replace `clinicPhone` (+91 94310 00000) with your official clinic landline/mobile",
-        "Replace `whatsappNumber` (e.g. 919431000000) with your clinic desk WhatsApp number",
-        "Update `clinicAddress` with your exact Patna clinic street, building name, and landmark",
-        "Add your state medical council registration number (e.g., Bihar Medical Council)",
-        "Review consultation hours (e.g., Mon–Sat 10 AM–2 PM & 5 PM–8 PM)"
+        "",
+        "",
+        "",
+        "",
+        "Just chill"
       ]
     },
     {
       step: 2,
-      title: "Connect Custom Domain Name",
+      title: "",
       icon: Globe,
-      description: "Connect your official domain (e.g. www.dranjalikumari.in or www.dranjalipatna.com).",
+      description: "",
       checklist: [
-        "Purchase your domain from a reputable registrar (Google Domains / Squarespace / Namecheap / GoDaddy)",
-        "Add DNS A-records and CNAME records pointing to your hosting provider",
-        "Ensure HTTPS (SSL/TLS certificate) is enabled (free automated Let's Encrypt SSL provided by Cloud Run / Vercel / Netlify)",
-        "Update the canonical domain in `public/robots.txt` and `public/sitemap.xml`"
+        "".
+        ""
       ]
     },
     {
       step: 3,
-      title: "Google Search Console Verification",
+      title: "",
       icon: Search,
-      description: "Verify ownership in Google Search Console to rank for Patna gynecology searches.",
+      description: "",
       checklist: [
-        "Visit https://search.google.com/search-console",
-        "Add your domain (e.g. `dranjalikumari.in`) as a 'Domain' or 'URL Prefix' property",
-        "Verify ownership via DNS TXT Record (easiest and permanent) or HTML verification file",
-        "Once verified, go to 'Sitemaps' on the left menu",
-        "Submit `https://dranjalikumari.in/sitemap.xml`",
-        "Submit `https://dranjalikumari.in/image-sitemap.xml` for Google Images indexing"
+       "",
+        ""
       ]
     },
     {
       step: 4,
-      title: "Claim Google Business Profile (Patna)",
+      title: "",
       icon: MapPin,
-      description: "Local SEO ranking in Patna depends heavily on an official Google Business Profile.",
+      description: "",
       checklist: [
-        "Go to https://www.google.com/business",
-        "Search for or create 'Dr. Anjali Kumari - Gynecologist & Obstetrician'",
-        "Set primary category to: 'Gynecologist-Obstetrician' and secondary: 'Women's Health Clinic'",
-        "Set service area to: 'Patna, Bihar'",
-        "Enter exact matching clinic address and phone number (NAP consistency)",
-        "Link your verified website URL (`https://dranjalikumari.in`) as the primary website link",
-        "Complete video or postcard verification with Google",
-        "Upload authentic photos of the clinic entrance, reception, and doctor's consultation suite"
+       "",
+        ""
       ]
     },
     {
       step: 5,
-      title: "Request Indexing & Monitoring",
+      title: "",
       icon: FileText,
-      description: "Kickstart Google crawl and monitor search query impressions.",
+      description: "",
       checklist: [
-        "In Google Search Console, paste your homepage URL in the top URL Inspection bar",
-        "Click 'Test Live URL', then click 'Request Indexing'",
-        "Repeat URL Inspection for `/about`, `/gynecology`, `/obstetrics`, `/pregnancy-care`, `/location`",
-        "Check back after 7–14 days in the 'Performance' tab to see queries like 'Dr Anjali Kumari Patna' and 'Gynecologist in Patna'",
+       "",
         "Respond courteously to all genuine patient reviews received on Google Business Profile"
       ]
     }
