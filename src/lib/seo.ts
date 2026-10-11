@@ -72,7 +72,7 @@ export function updatePageSeo(config: PageSeoConfig) {
         "jobTitle": "Gynecologist & Obstetrician",
         "description": "Dr. Anjali Kumari is a Gynecologist and Obstetrician practicing in Patna, Bihar, providing evidence-informed women's healthcare and antenatal consultations.",
         "url": origin,
-        "image": `${origin}/images/doctor/anjali-kumari-portrait.svg`,
+        "image": `${origin}/images/doctor/anjali-kumari-portrait.jpg`,
         "medicalSpecialty": [
           "https://schema.org/Gynecologic",
           "https://schema.org/Obstetric"
