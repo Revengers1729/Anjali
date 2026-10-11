@@ -32,7 +32,7 @@ export const IMAGES = {
   },
   doctor: {
     portrait: {
-      src: '/images/doctor/anjali-kumari-portrait.svg',
+      src: '/images/doctor/anjali-kumari-portrait.jpg',
       alt: 'Dr. Anjali Kumari, Gynecologist and Obstetrician in Patna, Bihar',
       title: 'Dr. Anjali Kumari - Gynecologist & Obstetrician',
       aspectRatio: '3/4',
