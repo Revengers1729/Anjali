@@ -1,19 +1,17 @@
+
 import React, { useState, useEffect } from "react";
-import { Menu, X, Calendar, Phone, MapPin } from "lucide-react";
-import { DOCTOR_DATA } from "../data/doctorData";
+import { Menu, X, Calendar, MapPin } from "lucide-react";
 
 interface HeaderProps {
   currentPath: string;
   onNavigate: (path: string) => void;
   onOpenBooking: () => void;
-  onOpenOwnerGuide: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   currentPath,
   onNavigate,
   onOpenBooking,
-  onOpenOwnerGuide,
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,8 +20,14 @@ export const Header: React.FC<HeaderProps> = ({
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const navLinks = [
@@ -53,7 +57,7 @@ export const Header: React.FC<HeaderProps> = ({
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Zone 1: Single text element wordmark */}
+            {/* Brand */}
             <button
               onClick={() => handleNav("/")}
               className="text-left group cursor-pointer focus:outline-none"
@@ -64,19 +68,24 @@ export const Header: React.FC<HeaderProps> = ({
               </span>
             </button>
 
-            {/* Zone 2: 4-6 clean text navigation links */}
+            {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-[#475569]">
               {navLinks.map((link) => {
                 const isActive = currentPath === link.path;
+
                 return (
                   <button
                     key={link.path}
                     onClick={() => handleNav(link.path)}
+                    aria-current={isActive ? "page" : undefined}
                     className={`relative py-1 transition-colors hover:text-[#0F1D38] cursor-pointer focus:outline-none ${
-                      isActive ? "text-[#0F1D38] font-semibold" : ""
+                      isActive
+                        ? "text-[#0F1D38] font-semibold"
+                        : ""
                     }`}
                   >
                     {link.label}
+
                     {isActive && (
                       <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-[#9B3C53]" />
                     )}
@@ -85,7 +94,7 @@ export const Header: React.FC<HeaderProps> = ({
               })}
             </nav>
 
-            {/* Zone 3: 1-2 primary actions */}
+            {/* Header Actions */}
             <div className="flex items-center gap-3">
               <button
                 onClick={onOpenBooking}
@@ -95,27 +104,37 @@ export const Header: React.FC<HeaderProps> = ({
                 Book Appointment
               </button>
 
-              {/* Mobile menu hamburger button */}
+              {/* Mobile Menu Button */}
               <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                onClick={() =>
+                  setMobileMenuOpen(!mobileMenuOpen)
+                }
                 className="lg:hidden p-2 text-[#0F1D38] hover:text-[#9B3C53] focus:outline-none"
-                aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-label={
+                  mobileMenuOpen ? "Close menu" : "Open menu"
+                }
+                aria-expanded={mobileMenuOpen}
               >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {mobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
               </button>
             </div>
           </div>
         </div>
       </header>
 
-      {/* Mobile Slide-Out / Drawer Navigation */}
+      {/* Mobile Drawer Navigation */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-50 lg:hidden flex flex-col bg-[#FAF9F6]">
-          {/* Header inside mobile menu */}
+          {/* Mobile Menu Header */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-[#0F1D38]/10">
             <span className="font-serif text-xl font-semibold text-[#0F1D38]">
               Dr. Anjali Kumari
             </span>
+
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="p-2 text-[#0F1D38] hover:text-[#9B3C53]"
@@ -126,13 +145,19 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           <div className="flex-1 overflow-y-auto px-6 py-8 flex flex-col justify-between">
+            {/* Mobile Navigation Links */}
             <nav className="flex flex-col gap-4 text-base font-medium text-[#1E293B]">
               {navLinks.map((link) => (
                 <button
                   key={link.path}
                   onClick={() => handleNav(link.path)}
+                  aria-current={
+                    currentPath === link.path ? "page" : undefined
+                  }
                   className={`text-left py-2.5 border-b border-[#0F1D38]/5 transition-colors ${
-                    currentPath === link.path ? "text-[#9B3C53] font-semibold" : "hover:text-[#0F1D38]"
+                    currentPath === link.path
+                      ? "text-[#9B3C53] font-semibold"
+                      : "hover:text-[#0F1D38]"
                   }`}
                 >
                   {link.label}
@@ -140,6 +165,7 @@ export const Header: React.FC<HeaderProps> = ({
               ))}
             </nav>
 
+            {/* Mobile Booking & Location */}
             <div className="pt-8 border-t border-[#0F1D38]/10 flex flex-col gap-3">
               <button
                 onClick={() => {
@@ -152,19 +178,11 @@ export const Header: React.FC<HeaderProps> = ({
                 Book An Appointment
               </button>
 
-              <div className="flex items-center justify-between text-xs text-[#64748B] pt-2">
+              <div className="flex items-center justify-center text-xs text-[#64748B] pt-2">
                 <span className="flex items-center gap-1">
-                  <MapPin className="w-3.5 h-3.5 text-[#9B3C53]" /> Patna, Bihar
+                  <MapPin className="w-3.5 h-3.5 text-[#9B3C53]" />
+                  Patna, Bihar
                 </span>
-                <button
-                  onClick={() => {
-                    setMobileMenuOpen(false);
-                    onOpenOwnerGuide();
-                  }}
-                  className="text-[#9B3C53] underline font-medium"
-                >
-                  Owner Checklist
-                </button>
               </div>
             </div>
           </div>
