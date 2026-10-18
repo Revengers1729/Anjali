@@ -49,8 +49,8 @@ export const DOCTOR_DATA: PracticeInfo = {
   clinicName: "Dr. Anjali Kumari Clinic",
   clinicAddress: "Patna Central Medical Hub, Exhibition Road / Boring Road Area",
   landmark: "Easily accessible from Patna Junction & Bailey Road",
-  clinicPhone: "+91 94310 00000", // Standard verified placeholder for clinic desk
-  whatsappNumber: "919431000000",
+  clinicPhone: "+91 8986908625", // Standard verified placeholder for clinic desk
+  whatsappNumber: "918986908625",
   clinicEmail: "clinic@dranjalikumari.in",
   mapsQueryUrl: "https://www.google.com/maps/search/?api=1&query=Dr+Anjali+Kumari+Gynecologist+Patna+Bihar",
   consultationDays: "Monday to Saturday",
